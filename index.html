@@ -1,0 +1,66 @@
+!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main1.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,200&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+        <title>Print Email</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="img-header">
+                <a href="#">
+                    <img src="img/logo.png">
+                </a>
+            </div>    
+            <div class="button-header">
+                <button>Social Networks</button>
+            </div>
+        </header>
+        <!-- Form and Emails -->
+        <section class="container-page">
+            <article class="articles one">
+                    <form id="form">
+
+                    <label for="name">First Name</label>
+                    <input type="text" for="Name" id="inputName" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" for="email" id="inputEmail" required>
+
+                    <label for="age">Age</label>
+                    <input type="number" for="age" id="inputAge" required>
+
+                    <label for="country">Country</label>
+                    <select for="country" id="inputCountry" required>
+                    </select>
+
+                    <label for="dni">Dni</label>
+                    <input type="number" for="dni" id="inputDni" required>
+
+                    <button id="buttonPrint">Print</button>
+                </form>
+            </article>
+            <article class="articles two">
+                <table id="table">
+                    <tr>
+                        <th class="th title">Name</th>
+                        <th class="th title">Email</th>
+                        <th class="th title">Age</th>
+                        <th class="th title">Country</th>
+                        <th class="th title">Dni</th>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <footer>
+            <p>@Todos los derechos reservados</p>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>

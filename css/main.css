@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*-------------------------Variables Globales
+*/
+:root{
+    --green:#71e33f;
+    --gray: rgb(90 155 177);
+    --lightgray: #eae9e900;
+    --font1:'Raleway', sans-serif;
+}
+/*-------------------------Header
+*/
+.header{
+    background-color: var(--green);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-header a img{
+    height: 100px;
+    margin-left: 15px;
+}
+.button-header button{
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: rgba(255, 0, 0, 0);
+    margin-right: 20px;
+    cursor: pointer;
+}
+.button-header button:hover{
+    background-color: rgb(96 179 59);
+}
+/*-------------------------Form and Emails
+*/
+/*-------------------------Form
+*/
+.container-page{
+    display: flex;
+}
+.articles{
+    display: grid;
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: lightgray;
+    padding: 10px;
+    border-left: 5px solid var(--green);
+    box-sizing: content-box;
+}
+label,input,select{
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    width: 95%;
+}
+input,select{
+    padding: 5px;
+}
+.articles button{
+    margin: auto;
+    margin-top: 10px;
+    width: 95%;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    background-color: rgb(56, 56, 56);
+    border: 1px solid lightgray;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.one{
+    width: 30%;
+}
+.two{
+    width: 60%;
+}
+.articles button:hover{
+    background-color: rgb(65, 65, 65);
+}
+/*-------------------------Email
+*/
+.th{
+    border-bottom: 1px solid black;
+    color: rgb(59, 59, 59);
+    text-transform: capitalize;
+}
+table{
+    background-color: rgb(231, 231, 231);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title{
+    color: rgb(16, 38, 87);
+}
+/*-------------------------Footer
+*/
+footer{
+    background-color: var(--green);
+    text-align: center;
+    margin-top: 20px;
+    height: 128px;
+}
+footer p{
+    padding-top: 100px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+@media (max-width: 1018px){
+    tbody{
+        font-size: 14px;
+    }
+}    
+@media (max-width: 767px){
+    .container-page{
+        display: block;
+        margin: auto;
+    }
+    .one,.two{
+        width: 85%;
+    }
+    #table{
+        font-size: 11px;
+    }
+}   
+@media (max-with: 570px){
+    #table{
+        font-size: 8px;
+    }
+}
+@media (max-width: 429px){
+    #table{
+        font-size: 7px;
+    }
+}
