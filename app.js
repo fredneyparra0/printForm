@@ -15,7 +15,7 @@ for (let i = 0; i < countrys.length; i++) {
     inputCountry.appendChild(option);
 }
 
-buttonPrint.addEventListener('click',(e) => {
+buttonPrint.addEventListener('submit',(e) => {
     e.preventDefault();
     const tr = document.createElement('tr');
     
