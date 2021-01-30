@@ -5,6 +5,8 @@ const inputCountry = document.getElementById('inputCountry');
 const inputDni = document.getElementById('inputDni');
 const buttonPrint = document.getElementById('buttonPrint');
 const table = document.getElementById('table');
+const form = document.getElementById('form');
+
 
 const countrys = ['Venezuela','Colombia','Peru','Chile'];
 
@@ -15,7 +17,7 @@ for (let i = 0; i < countrys.length; i++) {
     inputCountry.appendChild(option);
 }
 
-buttonPrint.addEventListener('submit',(e) => {
+form.addEventListener('submit',(e) => {
     e.preventDefault();
     const tr = document.createElement('tr');
     
