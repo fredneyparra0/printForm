@@ -3,12 +3,13 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*-------------------------Variables Globales
 */
 :root{
-    --green:#71e33f;
+    --newViolet : rgb(92, 75, 210);
     --gray: rgb(90 155 177);
     --lightgray: #eae9e900;
     --font1:'Raleway', sans-serif;
@@ -16,13 +17,13 @@
 /*-------------------------Header
 */
 .header{
-    background-color: var(--green);
+    background-color: var(--newViolet);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .img-header a img{
-    height: 100px;
+    height: 60px;
     margin-left: 15px;
 }
 .button-header button{
@@ -34,9 +35,10 @@
     background-color: rgba(255, 0, 0, 0);
     margin-right: 20px;
     cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .button-header button:hover{
-    background-color: rgb(96 179 59);
+    background-color: rgb(58, 47, 128);
 }
 /*-------------------------Form and Emails
 */
@@ -52,7 +54,7 @@
     margin-top: 20px;
     background-color: lightgray;
     padding: 10px;
-    border-left: 5px solid var(--green);
+    border-left: 5px solid var(--newViolet);
     box-sizing: content-box;
 }
 label,input,select{
@@ -62,9 +64,14 @@ label,input,select{
     display: block;
     width: 95%;
 }
-input,select{
+input, select{
     padding: 5px;
+    
 }
+input:invalid{
+    background-color: pink;
+}
+
 .articles button{
     margin: auto;
     margin-top: 10px;
@@ -94,6 +101,7 @@ input,select{
     border-bottom: 1px solid black;
     color: rgb(59, 59, 59);
     text-transform: capitalize;
+    font-weight: 400;
 }
 table{
     background-color: rgb(231, 231, 231);
@@ -105,17 +113,16 @@ table{
 /*-------------------------Footer
 */
 footer{
-    background-color: var(--green);
+    background-color: var(--newViolet);
     text-align: center;
     margin-top: 20px;
-    height: 128px;
+    height: 105px;
 }
 footer p{
-    padding-top: 100px;
+    padding-top: 20px;
     text-transform: capitalize;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-weight: 600;
 }
 
 @media (max-width: 1018px){
