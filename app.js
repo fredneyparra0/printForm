@@ -1,3 +1,4 @@
+
 const inputName = document.getElementById('inputName'),
     inputEmail = document.getElementById('inputEmail'),
     inputAge = document.getElementById('inputAge'),
